@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  </head>
+  <body>
+    <header class="bg-dark-blue" id="home">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#home">ChloeLiang</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero-text-box">
+        <h1>Hi, I'm <span>Chloe Liang</span><br>
+          I'm a developer for<br>
+          <span class="typer" id="main" data-words="web,mobile,game" data-colors="#e0006e" data-delay="100" data-deleteDelay="1000"></span>
+          <span class="cursor" data-owner="main"></span>
+        </h1>
+        <a class="btn btn-ghost header-button js--scroll-to-about" href="#about">Find out more <i></i></a>
+      </div>
+    </header>
+
+    <div class="container-fluid py-5 js--about" id="about">
+      <div class="row">
+        <div class="col">
+          <h1 class="section-heading text-center">About Me</h1>
+        </div>
+      </div>
+      <div class="row text-center justify-content-center my-5">
+        <div class="col-sm-10 col-lg-5">
+          <h2>Who am I?</h2>
+          <p>I'm a software developer. I've built desktop software, mobile application, web application and games.</p>
+          <p>I'd love to <a href="mailto:nliangxin@gmail.com">chat</a> about job opportunities, projects, technologies, games, or whatever is on your mind.</p>
+        </div>
+        <div class="col-sm-12 col-lg-5">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-5 bg-grey" id="portfolio">
+      <div class="row">
+        <div class="col">
+          <h1 class="section-heading text-center">Portfolio</h1>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="row text-center justify-content-center my-5">
+
+          <div class="col-sm-6 col-lg-4 my-3">
+            <div class="project-photo">
+              <h1 class="project-title">Unit18</h1>
+              <p class="project-description">HTML, Sass, JavaScript</p>
+              <a class="btn-project" target="_blank" href="http://unit.nyp.edu.sg">View More</a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 my-3">
+            <div class="project-photo">
+              <h1 class="project-title">ICH 3D</h1>
+              <p class="project-description">Objective-C++, OpenCV</p>
+              <a class="btn-project" target="_blank" href="https://itunes.apple.com/us/app/ich-3d/id1180473248?mt=8&app=itunes&ign-mpt=uo%3D4">View More</a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 my-3">
+            <div class="project-photo">
+              <h1 class="project-title">Patatap</h1>
+              <p class="project-description">Paper.js, howler.js</p>
+              <a class="btn-project" target="_blank" href="https://chloeliang.github.io/Patatap/">View More</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="vendors/js/typer.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <script src="resources/js/script.js"></script>
+  </body>
+</html>
