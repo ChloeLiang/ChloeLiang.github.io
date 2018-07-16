@@ -1,0 +1,12 @@
+.header {
+    height: 100vh;
+    position: relative;
+
+    &__text-box {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
