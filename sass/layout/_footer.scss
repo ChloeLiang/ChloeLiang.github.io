@@ -1,0 +1,49 @@
+.footer {
+    background-color: $color-grey-dark;
+    padding: 5rem 0;
+    position: relative;
+
+    &__navigation {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            font-size: 3.5rem;
+            color: $color-grey-light;
+            transition: all .2s;
+        }
+
+        &--gmail:hover {
+            color: $color-gmail;
+        }
+
+        &--github:hover {
+            color: $color-github;
+        }
+
+        &--twitter:hover {
+            color: $color-twitter;
+        }
+
+        &--linkedin:hover {
+            color: $color-linkedin;
+        }
+    }
+}
