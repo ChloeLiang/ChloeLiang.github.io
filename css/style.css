@@ -107,22 +107,6 @@ body {
 .u-margin-top-big {
   margin-top: 6rem; }
 
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: .8; }
-  .bg-video__content {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; }
-  @media only screen and (max-width: 37.5em) {
-    .bg-video {
-      display: none; } }
-
 .btn:link, .btn:visited {
   display: inline-block;
   font-size: 1.6rem;
@@ -329,12 +313,10 @@ body {
 
 .header {
   height: 100vh;
-  position: relative; }
-  @media only screen and (max-width: 37.5em) {
-    .header {
-      background-image: url(../img/over-the-bridge.jpg);
-      background-size: cover;
-      background-position: top; } }
+  position: relative;
+  background-image: url(../img/over-the-bridge.jpg);
+  background-size: cover;
+  background-position: top; }
   .header__text-box {
     position: absolute;
     width: 100%;
