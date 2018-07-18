@@ -273,10 +273,16 @@ body {
     display: inline-block; }
     .footer__item:not(:last-child) {
       margin-right: 3rem; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__item:not(:last-child) {
+          margin-right: 1.5rem; } }
   .footer__link:link, .footer__link:visited {
     font-size: 3.5rem;
     color: #f7f7f7;
     transition: all .2s; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__link:link, .footer__link:visited {
+        font-size: 2.5rem; } }
   .footer__link--gmail:hover {
     color: #dd4b39; }
   .footer__link--github:hover {
