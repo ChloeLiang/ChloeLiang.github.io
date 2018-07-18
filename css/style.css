@@ -119,6 +119,9 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover; }
+  @media only screen and (max-width: 37.5em) {
+    .bg-video {
+      display: none; } }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -327,6 +330,11 @@ body {
 .header {
   height: 100vh;
   position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      background-image: url(../img/over-the-bridge.jpg);
+      background-size: cover;
+      background-position: top; } }
   .header__text-box {
     position: absolute;
     top: 45%;

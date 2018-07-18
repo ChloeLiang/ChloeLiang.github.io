@@ -2,6 +2,12 @@
     height: 100vh;
     position: relative;
 
+    @include respond(phone) {
+        background-image: url(../img/over-the-bridge.jpg);
+        background-size: cover;
+        background-position: top;
+    }
+
     &__text-box {
         position: absolute;
         top: 45%;
