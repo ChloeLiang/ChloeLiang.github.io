@@ -4,6 +4,10 @@
     position: relative;
     height: 40rem;
 
+    @include respond(tab-port) {
+        height: 35rem;
+    }
+
     &__side {
         height: 40rem;
         transition: all .8s ease;
@@ -14,6 +18,10 @@
         backface-visibility: hidden;
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        @include respond(tab-port) {
+            height: 35rem;
+        }
 
         &--front {
             background-color: $color-white;
@@ -43,6 +51,19 @@
         text-transform: uppercase;
         text-align: center;
 
+        @include respond(tab-port) {
+            margin-top: 5rem;
+        }
+
+        @include respond(phone) {
+            font-size: 3.5rem;
+        }
+
+        @include respond(phone-small) {
+            margin-top: 3rem;
+            font-size: 3rem;
+        }
+
         &::after {
             content: "";
             display: block;
@@ -54,9 +75,22 @@
     }
 
     &__detail {
-        padding: 5rem;
+        padding: 4rem;
         font-size: $default-font-size;
         text-align: center;
+
+        @include respond(tab-port) {
+            padding: 4rem 2rem;
+        }
+
+        @include respond(phone) {
+            padding: 4rem;
+            font-size: 2rem;
+        }
+
+        @include respond(phone-small) {
+            padding: 2rem;
+        }
     }
 
     &__cta {

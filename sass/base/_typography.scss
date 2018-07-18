@@ -21,6 +21,15 @@ body {
         font-weight: 400;
         letter-spacing: .5rem;
         animation: moveInLeft 1s ease-out;
+
+        @include respond(tab-port) {
+            font-size: 5rem;
+        }
+
+        @include respond(phone) {
+            letter-spacing: .3rem;
+            font-size: 4.5rem;
+        }
     }
 
     &--sub {

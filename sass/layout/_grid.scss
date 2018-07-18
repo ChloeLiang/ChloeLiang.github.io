@@ -2,26 +2,43 @@
     max-width: $grid-width;
     margin: 0 auto;
 
-    &:not(:last-child) {
-        margin-bottom: $gutter-vertical;
+    @include respond(phone) {
+        max-width: 50rem;
     }
 
     @include clearfix;
 
     [class^="col-"] {
         float: left;
+        margin-bottom: $gutter-vertical;
 
-        &:not(:last-child) {
+        &:not(:nth-child(3n)) {
             margin-right: $gutter-horizontal;
         }
-    }
 
-    .col-1-of-2 {
-        width: calc((100% - #{$gutter-horizontal}) / 2);
+        @include respond(tab-port) {
+            margin-right: $gutter-horizontal;
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+
+        @include respond(phone) {
+            margin-right: 0;
+        }
     }
     
     .col-1-of-3 {
         width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+
+        @include respond(tab-port) {
+            width: calc((100% - #{$gutter-horizontal}) / 2);
+        }
+
+        @include respond(phone) {
+            width: 100%;
+        }
     }
 
 }
