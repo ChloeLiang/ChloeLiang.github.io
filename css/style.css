@@ -69,7 +69,8 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: .5rem;
-    animation: moveInLeft 1s ease-out; }
+    animation: moveInLeft 1s ease-out;
+    animation-fill-mode: backwards; }
     @media only screen and (max-width: 56.25em) {
       .heading-primary--main {
         font-size: 5rem; } }
@@ -82,7 +83,8 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: .5rem;
-    animation: moveInRight 1s ease-out; }
+    animation: moveInRight 1s ease-out;
+    animation-fill-mode: backwards; }
 
 .heading-secondary {
   font-size: 3.6rem;
@@ -335,9 +337,7 @@ body {
 .header {
   height: 100vh;
   position: relative;
-  background-image: url(../img/over-the-bridge.jpg);
-  background-size: cover;
-  background-position: top; }
+  background-image: linear-gradient(to right bottom, #b1e7d7, #529a86); }
   .header__text-box {
     position: absolute;
     width: 100%;

@@ -1,9 +1,7 @@
 .header {
     height: 100vh;
     position: relative;
-    background-image: url(../img/over-the-bridge.jpg);
-    background-size: cover;
-    background-position: top;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 
     &__text-box {
         position: absolute;

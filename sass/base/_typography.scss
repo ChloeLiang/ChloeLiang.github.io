@@ -21,6 +21,7 @@ body {
         font-weight: 400;
         letter-spacing: .5rem;
         animation: moveInLeft 1s ease-out;
+        animation-fill-mode: backwards;
 
         @include respond(tab-port) {
             font-size: 5rem;
@@ -38,6 +39,7 @@ body {
         font-weight: 700;
         letter-spacing: .5rem;
         animation: moveInRight 1s ease-out;
+        animation-fill-mode: backwards;
     }
 }
 
