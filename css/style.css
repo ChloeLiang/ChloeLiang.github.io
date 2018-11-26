@@ -111,6 +111,20 @@ body {
 .u-margin-top-big {
   margin-top: 6rem; }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(to right bottom, #b1e7d7, #529a86); }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .btn:link, .btn:visited {
   display: inline-block;
   font-size: 1.6rem;
@@ -338,8 +352,7 @@ body {
 
 .header {
   height: 100vh;
-  position: relative;
-  background-image: linear-gradient(to right bottom, #b1e7d7, #529a86); }
+  position: relative; }
   .header__text-box {
     position: absolute;
     width: 100%;
