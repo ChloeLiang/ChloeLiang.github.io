@@ -12,12 +12,6 @@ Install [Node.js](https://nodejs.org).
 
 ### Installing
 
-Install `live-server` globally.
-
-```bash
-npm install -g live-server
-```
-
 Install all the dependencies:
 
 ```bash
