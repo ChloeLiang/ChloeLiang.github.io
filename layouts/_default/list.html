@@ -40,9 +40,12 @@
       href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true) }} 
+    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
     <title>Chloe Liang</title>
   </head>
+
   <body>
     <header class="header">
       <div class="bg-video">
@@ -59,14 +62,14 @@
           <span class="heading-primary--sub">Full Stack Developer</span>
         </h1>
 
-        <a class="btn btn--white btn--animated js--scroll-to-portfolio" href="#"
+        <a class="btn btn--white btn--animated" href="#portfolio"
           >Find out more</a
         >
       </div>
     </header>
 
     <main>
-      <section class="section-portfolio">
+      <section class="section-portfolio" id="portfolio">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Portfolio</h2>
         </div>
