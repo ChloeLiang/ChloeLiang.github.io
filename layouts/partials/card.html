@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card__side card__side--front">
+    <h4 class="card__heading u-margin-top-big">{{ .title }}</h4>
+    <p class="card__detail">{{ .details }}</p>
+  </div>
+
+  <div class="card__side card__side--back">
+    <div class="card__cta">
+      <div class="card__technic u-margin-top-big">
+        <ul>
+          {{ range .techStack }}
+            <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <div class="card__button">
+        <a href="{{ .url }}" target="_blank" class="btn-text"
+          >View more</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<section class="section-portfolio" id="portfolio">
+  <div class="u-center-text u-margin-bottom-big">
+    <h2 class="heading-secondary">Portfolio</h2>
+  </div>
+
+  <div class="row">
+    {{ range .Params.projects }}
+      <div class="col-1-of-3">
+        {{ partial "card.html" . }}
+      </div>
+    {{ end }}
+  </div>
+</section>
