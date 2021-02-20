@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-130398576-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-130398576-1');
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <meta property="og:title" content="Portfolio - ChloeLiang" />
+    <meta property="og:description" content="My portfolio - Liang Xin, Chloe" />
+    <meta property="og:url" content="https://chloeliang.github.io/" />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/nliangxin/image/upload/v1543634645/portfolio_wscu20.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://img.icons8.com/dusk/50/ecf0f1/home-page.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700"
+      rel="stylesheet"
+    />
+    {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true) }} 
+    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
+    <title>{{ .Title }}</title>
+  </head>
+
+  <body>
+    {{ block "content" . }} {{ end }}
+    {{ partial "footer.html" }}
+  </body>
+</html>
