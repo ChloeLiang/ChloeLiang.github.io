@@ -11,6 +11,16 @@ projects:
       - HTML
       - CSS
       - JavaScript
+  - title: Streak
+    url: https://www.streak-app.com
+    details: A task tracker app that helps quantify a task and keep track of
+      the progress every day.
+    techStack:
+      - React
+      - TypeScript
+      - Jest
+      - AWS Cognito, DynamoDB
+      - Serverless
   - title: Codacity
     url: https://codacity.netlify.com
     details: A 7-key vertical scrolling rhythm game where you have to
