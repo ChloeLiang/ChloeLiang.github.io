@@ -1,39 +1,19 @@
 <footer class="footer">
   <div class="footer__navigation">
     <ul class="footer__list">
-      <li class="footer__item">
-        <a
-          href="mailto:nliangxin@gmail.com"
-          target="_blank"
-          class="footer__link footer__link--gmail"
-          aria-label="Email"
-          rel="noopener"
-        >
-          <i class="far fa-envelope"></i>
-        </a>
-      </li>
-      <li class="footer__item">
-        <a
-          href="https://github.com/ChloeLiang"
-          target="_blank"
-          class="footer__link footer__link--github"
-          aria-label="GitHub"
-          rel="noopener"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      <li class="footer__item">
-        <a
-          href="https://www.linkedin.com/in/liang-xin"
-          target="_blank"
-          class="footer__link footer__link--linkedin"
-          aria-label="LinkedIn"
-          rel="noopener"
-        >
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
+      {{ range .Site.Data.social }}
+        <li class="footer__item">
+          <a
+            href="{{ .url }}"
+            target="_blank"
+            class="footer__link footer__link--{{ .type }}"
+            aria-label="{{ .type }}"
+            rel="noopener"
+          >
+            <i class="{{ .icon }}"></i>
+          </a>
+        </li>
+      {{ end }}
     </ul>
   </div>
 </footer>

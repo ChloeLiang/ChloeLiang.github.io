@@ -1,0 +1,9 @@
+- type: email
+  url: mailto:nliangxin@gmail.com
+  icon: far fa-envelope
+- type: github
+  url: https://github.com/ChloeLiang
+  icon: fab fa-github
+- type: linkedin
+  url: https://www.linkedin.com/in/liang-xin
+  icon: fab fa-linkedin
